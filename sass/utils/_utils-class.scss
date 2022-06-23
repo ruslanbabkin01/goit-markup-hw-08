@@ -14,9 +14,21 @@
 .container{
    margin-left: auto;
    margin-right: auto;
-   width: 1200px;
+   // width: 1200px;
    padding-right: 15px;
    padding-left: 15px;
+
+   @media screen and (min-width: 400px) {
+         width: 480px;
+      }
+   
+      @media screen and (min-width: 768px) {
+         width: 768px;
+      }
+   
+      @media screen and (min-width: 1600px) {
+         width: 1600px;
+      }
 }
 
 .visually-hidden{
