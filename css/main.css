@@ -25,9 +25,9 @@
 }
 
 .container {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -67,6 +67,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .button {
@@ -243,7 +244,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding: 200px;
+  padding: 200px 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/index/hero/hero.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero/hero.jpg");
   background-repeat: no-repeat;
@@ -571,7 +572,6 @@ img {
   margin-top: 0;
   color: var(--white-color);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -664,9 +664,9 @@ img {
 }
 
 .card-list__item {
-  width: calc((100% - 60px) / 3);
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
-  border: 1px solid #EEEEEE;
   margin-bottom: 30px;
 }
 .card-list__item:nth-child(3n) {
@@ -728,12 +728,13 @@ img {
 }
 
 .card-thumb {
+  border: 1px solid #EEEEEE;
+  border-top: none;
   padding: 20px 24px;
 }
 
 .card-thumb__title {
   margin-bottom: 4px;
-  text-transform: none;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -741,8 +742,7 @@ img {
 }
 
 .card-thumb__description {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
