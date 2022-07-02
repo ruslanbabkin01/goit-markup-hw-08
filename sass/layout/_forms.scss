@@ -7,6 +7,15 @@
 
    background: rgba(0, 0, 0, 0.2);
    opacity: 1;
+
+   overflow-y: scroll;
+
+   @media screen and (max-width: 767px) {
+      padding: 94px 15px;
+   }
+   @media screen and (min-width: $tablet) and (min-width: 1199px){
+      padding: 208px 159px;
+   }
 }
 
 .backdrop.is-hidden {
@@ -21,17 +30,27 @@
 }
 
 .modal {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-
-   min-width: 528px;
+   @media screen and (max-width: 1199px){
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: scale(1) translate(-50%, -50%);
+      min-width: 450px;
+   }
+   @media screen and (min-width: $desktop){
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: scale(1) translate(-50%, -50%);
+      max-width: 528px;
+   }
+   
    border-radius: 4px;
 
    background-color: var(--white-color);
 
    opacity: 1;
-   transform: scale(1) translate(-50%, -50%);
+   
    transition: transform 250ms var(--timing-function),
       opacity 250ms var(--timing-function);
 }
@@ -174,9 +193,10 @@ textarea {
 }
 
 .label {
-   // display: flex;
-   // align-items: center;
-   @include centredFlex(center, stretch);
+   display: flex;
+   align-items: center;
+   min-width: 450px;
+
    margin-bottom: 30px;
 
    line-height: 1.71;

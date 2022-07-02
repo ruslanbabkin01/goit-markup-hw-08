@@ -6,8 +6,15 @@
 }
 
 .main-footer {
+   flex-wrap: wrap;
+
+
    display: flex;
    align-items: baseline;
+}
+
+.box-contacts{
+text-align: center;
 }
 
 .address-list {
@@ -64,7 +71,7 @@
    transition: fill 250ms var(--timing-function);
 }
 
-// footer form
+
 
 .footer-form {
    margin-left: 93px;

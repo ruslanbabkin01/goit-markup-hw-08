@@ -1,25 +1,55 @@
+.clients__title{
+   font-size: 28px;
+   line-height: 1.18;
+   text-align: center;
+   color: $title-text-color;
+   margin-bottom: 30px;
+
+   @media screen and (min-width: $desktop){
+      font-size: 36px;
+      line-height: 1.16;
+      margin-bottom: 50px;
+}
+}
+
 .partners-list {
-   @include centredFlex(center, stretch);
-   // display: flex;
-   // align-items: center;
    @extend %list;
+   display: flex;
+   flex-wrap: wrap;
+   margin: calc(-1 * #{$indent} / 2);
+
+   &.card-set{
+      @media screen and (min-width: $tablet) {
+      $indent: 3;
+   }
+   }
+   
+   @media screen and (min-width: $desktop){
+      @include centredFlex(center, stretch);
+   }
 }
 
 .partners-list__item {
    @include centredFlex(center, stretch);
-   // display: flex;
-   // align-items: center;
-   &:not(:last-child) {
-   margin-right: 30px;
+   margin: calc(#{$indent} / 2);
+   flex-basis: calc((#{$mobile} - #{$items} * #{$indent}) / #{$items});
+
+   &.card-set__item{
+   @media screen and (min-width: $tablet) {
+   $indent: 3;
+   }
+   }
+   
+   &:not(:last-child){
+      @media screen and (min-width: $desktop){
+      margin-right: 30px;
+      }
    }
 }
 
 .partners-list__link {
    color: var(--icon-colors);
 
-   // display: flex;
-   // align-items: center;
-   // justify-content: center;
    @include centredFlex();
    border: 1px solid var(--icon-colors);
    border-radius: 4px;

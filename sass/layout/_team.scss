@@ -1,29 +1,24 @@
 .section-team {
-   background-color: var(--bcg-second-color);
+   background-color: $bcg-second-color;
+}
+
+.section-team__title{
+   margin-bottom: 30px;
+   color: var(--title-text-color);
+
+   font-size: 28px;
+   line-height: 1.18;
+   text-align: center;
+
+   @media screen and (min-width: $desktop){
+   margin-bottom: 50px;
+   font-size: 36px;
+   line-height: 1.16;
+}
 }
 
 .team-list {
-   display: flex;
    @extend %list;
-}
-
-.team-list__title {
-   margin-bottom: 10px;
-   margin-top: 0;
-
-   color: var(--title-text-color);
-
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.19;
-}
-
-.team-list__text {
-   margin-top: 0;
-   margin-bottom: 16px;
-
-   font-size: 16px;
-   line-height: 1.19;
 }
 
 .team-list__item {
@@ -36,19 +31,62 @@
 
    text-align: center;
 
-   & + & {
-   margin-left: 30px;
+   &:not(:last-child){
+   @media screen and (max-width: 767px){
+      margin-bottom: 30px;
+   }
+   }
+
+   &+& {
+      @media screen and (min-width: $tablet) {
+      margin-left: 30px;
+      }
+   }
+
+   &.card-set__item {
+      @media screen and (min-width: $desktop) {
+      $items: 4;
+      }
    }
 }
 
+.team-list__icon{
+   margin: 0 auto;
+}
+
+.team-list__title {
+   margin-bottom: 10px;
+
+   color: var(--title-text-color);
+
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+}
+
+.team-list__text {
+   margin-bottom: 16px;
+
+   font-size: 16px;
+   line-height: 1.19;
+}
+
 .team-box {
-   padding: 30px 32px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   padding-top: 30px;
+   padding-bottom: 24px;
+
+   @media screen and (min-width: $desktop){
+   padding-bottom: 30px;
+   }
 }
 
 .list-actions {
-   // display: flex;
-   // align-items: center;
    @include centredFlex(center, stretch);
+   padding: 0;
 }
 
 .list-actions__item {
@@ -61,9 +99,6 @@
 }
 
 .list-actions__link {
-   // display: flex;
-   // align-items: center;
-   // justify-content: center;
    @include centredFlex();
 
    height: 44px;
