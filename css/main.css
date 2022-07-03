@@ -691,6 +691,10 @@ p, h1, h2, h3, h4 {
   }
 }
 
+.team-list__icon {
+  margin: 0 auto;
+}
+
 .team-list__title {
   margin-bottom: 10px;
   color: var(--title-text-color);
