@@ -692,7 +692,7 @@ p, h1, h2, h3, h4 {
 }
 
 .team-list__icon {
-  margin: 0 auto;
+  width: 100%;
 }
 
 .team-list__title {
