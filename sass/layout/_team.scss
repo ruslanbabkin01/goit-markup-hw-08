@@ -19,6 +19,13 @@
 
 .team-list {
    @extend %list;
+
+   &.card-set{
+      @media screen and (min-width: $desktop) {
+      flex-wrap: nowrap;
+   }
+   }
+   
 }
 
 .team-list__item {
@@ -37,22 +44,16 @@
    }
    }
 
-   &+& {
-      @media screen and (min-width: $tablet) {
-      margin-left: 30px;
-      }
-   }
-
-   &.card-set__item {
-      @media screen and (min-width: $desktop) {
-      $items: 4;
-      }
-   }
+   // &.card-set__item {
+   //    @media screen and (min-width: $desktop) {
+   //    $items: 4;
+   //    }
+   // }
 }
 
-.team-list__icon{
-   margin: 0 auto;
-}
+// .team-list__icon{
+//    margin: 0 auto;
+// }
 
 .team-list__title {
    margin-bottom: 10px;

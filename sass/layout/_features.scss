@@ -19,6 +19,12 @@
 
 .features-list {
    @extend %list;
+   
+   &.card-set{
+      @media screen and (min-width: $desktop){
+         flex-wrap: nowrap;
+      }
+   }
 }
 
 .features-list__item {

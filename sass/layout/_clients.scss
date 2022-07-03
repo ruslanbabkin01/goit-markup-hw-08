@@ -20,8 +20,11 @@
 
    &.card-set{
       @media screen and (min-width: $tablet) {
-      $indent: 3;
+         $indent: 3;
    }
+      @media screen and (min-width: $desktop) {
+         flex-wrap: nowrap;
+      }
    }
    
    @media screen and (min-width: $desktop){
@@ -32,7 +35,7 @@
 .partners-list__item {
    @include centredFlex(center, stretch);
    margin: calc(#{$indent} / 2);
-   flex-basis: calc((#{$mobile} - #{$items} * #{$indent}) / #{$items});
+   flex-basis: calc((100% - #{$items} * #{$indent}) / #{$items});
 
    &.card-set__item{
    @media screen and (min-width: $tablet) {

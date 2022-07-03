@@ -5,16 +5,38 @@
    background-color: var(--bcg-color);
 }
 
+
 .main-footer {
-   flex-wrap: wrap;
+   @media screen and (max-width: 767px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
 
+   @media screen and (min-width: $tablet) and (max-width: 1199px){
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 76px;
+      padding-right: 89px;
+      }
 
-   display: flex;
-   align-items: baseline;
+   @media screen and (min-width: $desktop){
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+   }
+   
 }
 
 .box-contacts{
-text-align: center;
+   @media screen and (max-width: 1199px){
+   text-align: center;
+   margin-bottom: 60px;
+   }
+
+   // @media screen and (min-width: $tablet) and (max-width: 1199px){
+   //    margin-left: 76px;
+   // }
 }
 
 .address-list {
@@ -24,7 +46,17 @@ text-align: center;
 }
 
 .adress-list__item {
-   margin-bottom: 9px;
+   @media screen and (max-width: 1199px){
+      &:not(:last-child){
+         margin-bottom: 8px;
+      }
+   }
+
+   @media screen and (min-width: $desktop) {
+      &:not(:last-child) {
+         margin-bottom: 9px;
+      }
+   }
 }
 
 .adress-list__contacts,
@@ -46,11 +78,25 @@ text-align: center;
 }
 
 .box-join {
+   @media screen and (max-width: 767px){
+      margin-bottom: 60px;
+   }
+
+   @media screen and (min-width: $tablet) and (max-width: 1199px){
+      margin-left: 165px;
+   }
+
+   @media screen and (min-width: $desktop) {
    display: inline-block;
    margin-left: 70px;
 }
+}
 
 .join-title {
+   @media screen and (max-width: 1199px){
+      text-align: center;
+   }
+
    margin-bottom: 20px;
    margin-top: 0;
 
@@ -63,6 +109,10 @@ text-align: center;
 
 .list-actions{
    @extend %list;
+
+   @media screen and (max-width: 767px) {
+      margin: 0 auto;
+}
 }
 
 .list-actions--white {
@@ -74,10 +124,17 @@ text-align: center;
 
 
 .footer-form {
-   margin-left: 93px;
+   @media screen and (min-width: $desktop){
+      margin-left: 93px;
+   }
+   
 }
 
 .footer-form__label {
+   @media screen and (max-width: 1199px){
+      text-align: center;
+   }
+
    display: block;
    margin-bottom: 20px;
 
@@ -99,6 +156,11 @@ text-align: center;
    border: 1px solid rgba(255, 255, 255, 0.3);
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    border-radius: 4px;
+
+   @media screen and (max-width: 1199px) {
+         margin-bottom: 20px;
+         display: block;
+      }
 }
 
 .button-form {
@@ -106,7 +168,6 @@ text-align: center;
    align-items: center;
    text-align: center;
 
-   margin-left: 12px;
    padding: 10px 29px;
    border-radius: 4px;
    border: 1px solid var(--accent-color);
@@ -124,6 +185,10 @@ text-align: center;
    font-size: 16px;
    line-height: 1.88;
    letter-spacing: 0.06em;
+
+   @media screen and (min-width: $desktop){
+      margin-left: 12px;
+   }
 }
 
 .button-form__icon {

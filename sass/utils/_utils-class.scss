@@ -41,20 +41,16 @@
       flex-wrap: wrap;
       margin: calc(-1 * #{$indent} / 2);
    }
-
-   @media screen and (min-width: $desktop) {
-      flex-wrap: nowrap;
-}
 }
 
 .card-set__item{
    @media screen and (min-width: $tablet){
    margin: calc(#{$indent} / 2);
-   flex-basis: calc((#{$tablet} - #{$items} * #{$indent}) / #{$items});
+   flex-basis: calc((100% - #{$items} * #{$indent}) / #{$items});
    }
 
    @media screen and (min-width: $desktop) {
-   flex-basis: calc((#{$desktop} - #{$items} * #{$indent}) / #{$items});
+   flex-basis: calc((100% - #{$items} * #{$indent}) / #{$items});
       }
 
 }

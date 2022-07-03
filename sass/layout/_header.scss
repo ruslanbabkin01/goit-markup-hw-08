@@ -5,9 +5,9 @@
 }
 
 .main-header {
+   
    display: flex;
    align-items: center;
-   justify-content: space-between;
    min-height: 60px;
 
    @media screen and (min-width: $tablet){
@@ -19,6 +19,10 @@
 // Мобильное меню
 
 .menu-button {
+   position: absolute;
+   top: 10px;
+   right: 15px;
+
    display: inline-flex;
    padding: 0;
    margin: 0;
@@ -36,17 +40,19 @@
 }
 
 .menu-button.is-open .icon-cross{
-   display: block
+   display: block;
 }
 
 .menu-button.is-open .icon-menu{
    display: none;
 }
 
+// .menu-button.is-open .header--logo{
+//    display: none;
+// }
+
 .menu-container{
    background-color:$white-color;
-
-   
 
    @media screen and (max-width: 767px) {
       display: none;
@@ -59,19 +65,21 @@
       display: block;
       }
 
-      padding-top: 48px;
-      padding-bottom: 48px;
-      padding-left: 40px;
+      padding: 48px 40px;
    }
 
    @media screen and (min-width: $tablet) {
       display: flex;
+      align-items: center;
+   }
+
+   @media screen and (min-width: $desktop) {
       align-items: baseline;
    }
 }
 
 .nav{
-   @media screen and (min-width: $tablet) {
+   @media screen and (min-width: $tablet) and (max-width: 1199px) {
       margin-left: 88px;
    }
 
@@ -161,10 +169,10 @@
       margin-bottom: 64px;
       }
 
-   @media screen and (min-width: $tablet){
-      margin-left: auto;
-      margin-left: 84px;
-   }
+   // @media screen and (min-width: $tablet){
+   //    margin-left: auto;
+   // }
+   
    @media screen and (min-width: $desktop) {
       display: flex;
    }
@@ -249,7 +257,7 @@
    }
 
    @media screen and (min-width: $tablet) {
-   margin-right: 10px;
+   margin-right: 8px;
    fill: currentColor;
 
    transition: fill 250ms var(--timing-function);

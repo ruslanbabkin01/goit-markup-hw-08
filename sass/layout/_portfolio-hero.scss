@@ -32,6 +32,14 @@
       margin-bottom: 30px;
       }
    }
+
+   // flex-grow: 1;
+
+   // &.card-set__item{
+   //    @media screen and (min-width: $desktop){
+   //       $items:3;
+   //    }
+   // }
 }
 
 .card-list__link {
@@ -94,10 +102,6 @@
    border-top: none;
    padding: 20px 24px;
 }
-
-// .card-thumb > .card-thumb__description{
-//    flex-grow: 1;
-// }
 
 .card-thumb__title {
    margin-bottom: 4px;
