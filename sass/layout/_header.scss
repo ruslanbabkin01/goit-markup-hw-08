@@ -60,21 +60,16 @@
       top: 100%;
       left: 0;
       width: 100%;
+      padding: 48px 40px;
 
    &.is-open {
       display: block;
       }
-
-      padding: 48px 40px;
    }
 
    @media screen and (min-width: $tablet) {
       display: flex;
       align-items: center;
-   }
-
-   @media screen and (min-width: $desktop) {
-      align-items: baseline;
    }
 }
 
@@ -175,6 +170,7 @@
    
    @media screen and (min-width: $desktop) {
       display: flex;
+      // margin-left: auto;
    }
 
 }
@@ -192,7 +188,7 @@
       }
 }
 
-   @media screen and (min-width: $tablet) {
+   @media screen and (min-width: $tablet) and (max-width: 1199px) {
    &:first-child {
    margin-bottom: 10px;
    }
@@ -202,8 +198,9 @@
 
 .auth-nav__item+.auth-nav__item {
    @media screen and (min-width: $desktop) {
-   margin-left: 50px;
+   margin-left: 30px;
    }
+   
 }
 
 .auth-nav__link {

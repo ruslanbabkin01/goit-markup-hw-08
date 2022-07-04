@@ -127,7 +127,10 @@
    @media screen and (min-width: $desktop){
       margin-left: 93px;
    }
-   
+
+   @media screen and (min-width: $tablet) and (max-width:1199px) {
+      margin: 0 auto;
+   }
 }
 
 .footer-form__label {
