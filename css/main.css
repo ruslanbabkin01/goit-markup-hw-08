@@ -266,6 +266,11 @@ p, h1, h2, h3, h4 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    margin-bottom: 302px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav {
     margin-left: 88px;
@@ -277,11 +282,6 @@ p, h1, h2, h3, h4 {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .site-nav {
-    margin-bottom: 302px;
-  }
-}
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -454,9 +454,6 @@ p, h1, h2, h3, h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .list-soc {
@@ -469,11 +466,29 @@ p, h1, h2, h3, h4 {
 }
 
 .list-soc__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+.list-soc__link::after {
+  position: absolute;
+  right: -20px;
+  content: "";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  display: inline-block;
+  width: 22px;
+  height: 1px;
+  background-color: rgba(33, 33, 33, 0.2);
 }
 
 .hero {
