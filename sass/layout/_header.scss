@@ -278,9 +278,6 @@
 }
 
 .list-soc__link{
-   display: flex;
-   align-items: center;
-
    position: relative;
       font-weight: 500;
       font-size: 18px;
@@ -292,6 +289,7 @@
    &::after {
       position: absolute;
       right: -20px;
+      bottom: 10px;
 
       content: '';
       transform: rotate(90deg);

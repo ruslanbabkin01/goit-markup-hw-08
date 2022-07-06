@@ -466,12 +466,6 @@ p, h1, h2, h3, h4 {
 }
 
 .list-soc__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
   font-weight: 500;
   font-size: 18px;
@@ -482,6 +476,7 @@ p, h1, h2, h3, h4 {
 .list-soc__link::after {
   position: absolute;
   right: -20px;
+  bottom: 10px;
   content: "";
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
