@@ -49,18 +49,21 @@
 }
 
 .menu-container{
-   background-color:$white-color;
-
    @media screen and (max-width: 767px) {
-      display: none;
+      // display: none;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       padding: 48px 40px;
+      background-color: $white-color;
+      
+      transform: translateX(-100%);
+      transition: transform 500ms var(--timing-function);
 
    &.is-open {
-      display: block;
+      // display: block;
+      transform: translateX(0);
       }
    }
 

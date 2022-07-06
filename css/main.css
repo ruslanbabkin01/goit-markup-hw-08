@@ -239,20 +239,24 @@ p, h1, h2, h3, h4 {
   display: none;
 }
 
-.menu-container {
-  background-color: #ffffff;
-}
 @media screen and (max-width: 767px) {
   .menu-container {
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     padding: 48px 40px;
+    background-color: #ffffff;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 500ms var(--timing-function);
+    transition: -webkit-transform 500ms var(--timing-function);
+    transition: transform 500ms var(--timing-function);
+    transition: transform 500ms var(--timing-function), -webkit-transform 500ms var(--timing-function);
   }
   .menu-container.is-open {
-    display: block;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @media screen and (min-width: 768px) {
