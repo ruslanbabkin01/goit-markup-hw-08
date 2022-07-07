@@ -33,13 +33,13 @@
       }
    }
 
-   // flex-grow: 1;
-
-   // &.card-set__item{
-   //    @media screen and (min-width: $desktop){
-   //       $items:3;
-   //    }
-   // }
+   &.card-set__item {
+      @media screen and (min-width: $desktop) {
+         margin: calc(#{$indent} / 2);
+            $items: 3;
+            flex-basis: calc((100% - #{$items} * #{$indent}) / #{$items});
+         }
+      }
 }
 
 .card-list__link {
