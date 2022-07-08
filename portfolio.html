@@ -27,7 +27,7 @@
 
    <header class="page-header">
       <div class="container main-header">
-         <a href="./index.html" class="logo link header--logo"><span class="accent">Web</span>Studio</a>
+         <a href="./index.html" class="logo link menu--logo"><span class="accent">Web</span>Studio</a>
          <button type="button" class="menu-button" data-menu-button aria-controls="menu-container" aria-expanded="false">
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                <use class="icon-menu" href="./images/icons.svg#menu"></use>
@@ -35,34 +35,38 @@
             </svg>
          </button>
          <div class="menu-container" data-menu id="menu-container">
+            <a href="./index.html" class="logo link header--logo"><span class="accent">Web</span>Studio</a>
             <nav class="nav">
                <ul class="site-nav">
                   <li class="site-nav__item"><a href="./index.html"
-                        class="site-nav__link link">Студия</a></li>
+                        class="site-nav__link link ">Студия</a></li>
                   <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link site-nav__link--current">Портфолио</a></li>
                   <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
                </ul>
             </nav>
-            <ul class="auth-nav">
-               <li class="auth-nav__item mail">
-                  <a href="mailto:info@devstudio.com" class="auth-nav__link mail link">
-                     <svg class="auth-nav__icon" width="16px" height="12px">
-                        <use href="./images/icons.svg#envelope"></use>
-                     </svg>info@devstudio.com</a>
-               </li>
-               <li class="auth-nav__item tel">
-                  <a href="tel:+380961111111" class="auth-nav__link tel link">
-                     <svg class="auth-nav__icon" width="10px" height="16px">
-                        <use href="./images/icons.svg#smartphone"></use>
-                     </svg>+38 096 111 11 11</a>
-               </li>
-            </ul>
-            <ul class="list-soc">
-               <li class="list-soc__item"><a class="list-soc__link link" href="">Instagram</a></li>
-               <li class="list-soc__item"><a class="list-soc__link link" href="">Twitter</a></li>
-               <li class="list-soc__item"><a class="list-soc__link link" href="">Facebook</a></li>
-               <li class="list-soc__item"><a class="list-soc__link link" href="">LinkedIn</a></li>
-            </ul>
+            <div class="auth-nat-cont">
+               <ul class="auth-nav">
+                  <li class="auth-nav__item mail">
+                     <a href="mailto:info@devstudio.com" class="auth-nav__link mail link">
+                        <svg class="auth-nav__icon" width="16px" height="12px">
+                           <use href="./images/icons.svg#envelope"></use>
+                        </svg>info@devstudio.com</a>
+                  </li>
+                  <li class="auth-nav__item tel">
+                     <a href="tel:+380961111111" class="auth-nav__link tel link">
+                        <svg class="auth-nav__icon" width="10px" height="16px">
+                           <use href="./images/icons.svg#smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                  </li>
+               </ul>
+               <ul class="list-soc">
+                  <li class="list-soc__item"><a class="list-soc__link link" href="">Instagram</a></li>
+                  <li class="list-soc__item"><a class="list-soc__link link" href="">Twitter</a></li>
+                  <li class="list-soc__item"><a class="list-soc__link link" href="">Facebook</a></li>
+                  <li class="list-soc__item"><a class="list-soc__link link" href="">LinkedIn</a></li>
+               </ul>
+            </div>
+   
          </div>
       </div>
    </header>

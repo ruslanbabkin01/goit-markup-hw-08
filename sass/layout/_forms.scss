@@ -204,10 +204,11 @@ textarea {
    text-align: center;
 
    margin-bottom: 30px;
+
    @media screen and (min-width: $desktop){
       display: flex;
       align-items: center;
-      min-width: 450px;
+      min-width: 100%;
    }
 }
 

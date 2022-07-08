@@ -43,6 +43,12 @@
 }
 
 .card-list__link {
+   @media screen and (min-width: $tablet){
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+   }
+
    transition: box-shadow 250ms var(--timing-function);
 
    &:hover,
@@ -96,11 +102,11 @@
 }
 
 .card-thumb {
-   display: flex;
-   flex-direction: column;
    border: 1px solid #EEEEEE;
    border-top: none;
    padding: 20px 24px;
+
+   flex-grow: 1;
 }
 
 .card-thumb__title {

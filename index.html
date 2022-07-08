@@ -27,7 +27,7 @@
 
    <header class="page-header">
       <div class="container main-header">
-         <a href="./index.html" class="logo link header--logo"><span class="accent">Web</span>Studio</a>
+         <a href="./index.html" class="logo link menu--logo"><span class="accent">Web</span>Studio</a>
          <button type="button" class="menu-button" data-menu-button aria-controls="menu-container"
             aria-expanded="false">
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -36,6 +36,7 @@
             </svg>
          </button>
          <div class="menu-container" data-menu id="menu-container">
+            <a href="./index.html" class="logo link header--logo"><span class="accent">Web</span>Studio</a>
             <nav class="nav">
                <ul class="site-nav">
                   <li class="site-nav__item"><a href="./index.html"
@@ -44,26 +45,29 @@
                   <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
                </ul>
             </nav>
-            <ul class="auth-nav">
-               <li class="auth-nav__item mail">
-                  <a href="mailto:info@devstudio.com" class="auth-nav__link mail link">
-                     <svg class="auth-nav__icon" width="16px" height="12px">
-                        <use href="./images/icons.svg#envelope"></use>
-                     </svg>info@devstudio.com</a>
-               </li>
-               <li class="auth-nav__item tel">
-                  <a href="tel:+380961111111" class="auth-nav__link tel link">
-                     <svg class="auth-nav__icon" width="10px" height="16px">
-                        <use href="./images/icons.svg#smartphone"></use>
-                     </svg>+38 096 111 11 11</a>
-               </li>
-            </ul>
-            <ul class="list-soc">
-               <li class="list-soc__item"><a class="list-soc__link link" href="">Instagram</a></li>
-               <li class="list-soc__item"><a class="list-soc__link link" href="">Twitter</a></li>
-               <li class="list-soc__item"><a class="list-soc__link link" href="">Facebook</a></li>
-               <li class="list-soc__item"><a class="list-soc__link link" href="">LinkedIn</a></li>
-            </ul>
+            <div class="auth-nat-cont">
+               <ul class="auth-nav">
+                  <li class="auth-nav__item mail">
+                     <a href="mailto:info@devstudio.com" class="auth-nav__link mail link">
+                        <svg class="auth-nav__icon" width="16px" height="12px">
+                           <use href="./images/icons.svg#envelope"></use>
+                        </svg>info@devstudio.com</a>
+                  </li>
+                  <li class="auth-nav__item tel">
+                     <a href="tel:+380961111111" class="auth-nav__link tel link">
+                        <svg class="auth-nav__icon" width="10px" height="16px">
+                           <use href="./images/icons.svg#smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                  </li>
+               </ul>
+               <ul class="list-soc">
+                  <li class="list-soc__item"><a class="list-soc__link link" href="">Instagram</a></li>
+                  <li class="list-soc__item"><a class="list-soc__link link" href="">Twitter</a></li>
+                  <li class="list-soc__item"><a class="list-soc__link link" href="">Facebook</a></li>
+                  <li class="list-soc__item"><a class="list-soc__link link" href="">LinkedIn</a></li>
+               </ul>
+            </div>
+
          </div>
       </div>
    </header>
@@ -173,7 +177,8 @@
                </li>
                <li class="team-list__item card-set__item">
                   <img srcset="./images/index/team/frontend_dev.jpg 1x, ./images/index/team/frontend_dev@2x.jpg 2x"
-                     src="./images/index/team/frontend_dev.jpg" alt="Фронтенд разработчик" width="270" class="team-list__icon">
+                     src="./images/index/team/frontend_dev.jpg" alt="Фронтенд разработчик" width="270"
+                     class="team-list__icon">
                   <div class="team-box">
                      <h3 class="team-list__title">Ольга Репина</h3>
                      <p class="team-list__text">Frontend Developer</p>
@@ -263,32 +268,38 @@
                   <a href="" class="partners-list__link">
                      <svg class="partners-list__icon" width="41" height="47.6">
                         <use href="./images/icons.svg#client-1"></use>
-                     </svg></a></li>
+                     </svg></a>
+               </li>
                <li class="partners-list__item card-set__item">
                   <a href="" class="partners-list__link">
                      <svg class="partners-list__icon" width="40" height="52">
                         <use href="./images/icons.svg#client-2"></use>
-                     </svg></a></li>
+                     </svg></a>
+               </li>
                <li class="partners-list__item card-set__item">
                   <a href="" class="partners-list__link">
                      <svg class="partners-list__icon" width="43.46" height="41.18">
                         <use href="./images/icons.svg#client-3"></use>
-                     </svg></a></li>
+                     </svg></a>
+               </li>
                <li class="partners-list__item card-set__item">
                   <a href="" class="partners-list__link">
                      <svg class="partners-list__icon" width="84.44" height="40.62">
                         <use href="./images/icons.svg#client-4"></use>
-                     </svg></a></li>
+                     </svg></a>
+               </li>
                <li class="partners-list__item card-set__item">
                   <a href="" class="partners-list__link">
                      <svg class="partners-list__icon" width="62.54" height="45.43">
                         <use href="./images/icons.svg#client-5"></use>
-                     </svg></a></li>
+                     </svg></a>
+               </li>
                <li class="partners-list__item card-set__item">
                   <a href="" class="partners-list__link">
                      <svg class="partners-list__icon" width="93.79" height="43.93">
                         <use href="./images/icons.svg#client-6"></use>
-                     </svg></a></li>
+                     </svg></a>
+               </li>
             </ul>
          </div>
       </section>
