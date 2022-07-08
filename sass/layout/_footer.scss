@@ -18,6 +18,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
+      justify-content: space-between;
    }
    
 }
@@ -74,7 +75,6 @@
 
    @media screen and (min-width: $desktop) {
    display: inline-block;
-   margin-left: 70px;
 }
 }
 
@@ -114,10 +114,6 @@
    @media screen and (max-width: 1199px) {
       text-align: center;
       }
-   
-   @media screen and (min-width: $desktop){
-      margin-left: 93px;
-   }
 }
 
 .footer-form__label {

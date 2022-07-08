@@ -229,7 +229,6 @@
 .auth-nav__link {
    &.tel{
       
-
       @media screen and (max-width: 767px){
       font-weight: 500;
       font-size: 34px;
@@ -269,6 +268,7 @@
       }
 
    @media screen and (min-width: $desktop) {
+      font-size: 14px;
       padding-top: 20px;
       padding-bottom: 20px;
       @include centredFlex(center, stretch);

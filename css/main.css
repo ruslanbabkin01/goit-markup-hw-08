@@ -471,6 +471,7 @@ p, h1, h2, h3, h4 {
 }
 @media screen and (min-width: 1200px) {
   .auth-nav__link {
+    font-size: 14px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: -webkit-box;
@@ -609,6 +610,11 @@ p, h1, h2, h3, h4 {
   margin-bottom: 30px;
   color: var(--white-color);
 }
+@media screen and (max-width: 370px) {
+  .hero__hero-title {
+    font-size: 22px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__hero-title {
     font-size: 44px;
@@ -650,6 +656,7 @@ p, h1, h2, h3, h4 {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 @media screen and (max-width: 767px) {
   .features-list__item:not(:last-child) {
@@ -983,6 +990,9 @@ p, h1, h2, h3, h4 {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1035,7 +1045,6 @@ p, h1, h2, h3, h4 {
 @media screen and (min-width: 1200px) {
   .box-join {
     display: inline-block;
-    margin-left: 70px;
   }
 }
 
@@ -1070,11 +1079,6 @@ p, h1, h2, h3, h4 {
 @media screen and (max-width: 1199px) {
   .footer-form {
     text-align: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-form {
-    margin-left: 93px;
   }
 }
 
@@ -1525,20 +1529,24 @@ textarea::placeholder {
 }
 
 .label {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.label-descr {
   line-height: 1.71;
   color: var(--primary-text-color);
-  text-align: center;
-  margin-bottom: 30px;
 }
-@media screen and (min-width: 1200px) {
-  .label {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-width: 100%;
+@media screen and (max-width: 1199px) {
+  .label-descr {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (max-width: 420px) {
+  .label-descr {
+    font-size: 10px;
   }
 }
 
@@ -1564,9 +1572,16 @@ textarea::placeholder {
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 5px;
   border: 2px solid var(--title-text-color);
   border-radius: 4px;
+}
+@media screen and (max-width: 420px) {
+  .label__icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+  }
 }
 
 .label__checkbox:checked + .label__icon {
@@ -1581,5 +1596,4 @@ textarea::placeholder {
 .label__link {
   display: inline;
   color: var(--accent-color);
-  margin-left: 3px;
 }/*# sourceMappingURL=main.css.map */
