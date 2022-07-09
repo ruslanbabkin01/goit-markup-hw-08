@@ -31,6 +31,10 @@
    border: none;
    background-color: transparent;
 
+   &.is-open{
+      position: fixed;
+   }
+   
    @media screen and (min-width: $tablet){
    display: none;
    }
