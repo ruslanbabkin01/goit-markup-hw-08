@@ -1339,7 +1339,6 @@ p, h1, h2, h3, h4 {
 }
 
 .modal {
-  width: 90%;
   border-radius: 4px;
   background-color: var(--white-color);
   opacity: 1;
@@ -1357,6 +1356,11 @@ p, h1, h2, h3, h4 {
             transform: scale(1) translate(-50%, -50%);
     max-width: 450px;
     width: 100%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 90%;
   }
 }
 @media screen and (min-width: 1200px) {
