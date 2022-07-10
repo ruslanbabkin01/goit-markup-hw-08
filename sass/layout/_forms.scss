@@ -35,8 +35,6 @@
 }
 
 .modal {
-   
-
    @media screen and (max-width: 1199px){
       position: absolute;
       top: 50%;
@@ -49,7 +47,7 @@
    @media screen and (max-width: 479px) {
       width: 90%;
    }
-   
+
    @media screen and (min-width: $desktop){
       position: absolute;
       top: 50%;
