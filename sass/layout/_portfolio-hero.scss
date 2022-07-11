@@ -40,6 +40,12 @@
       }
    }
 
+   @media screen and (min-width: $tablet){
+      display: flex;
+      justify-content: space-around;
+   }
+
+
    &.card-set__item {
       @media screen and (min-width: $desktop) {
          margin: calc(#{$indent} / 2);
@@ -53,7 +59,6 @@
    @media screen and (min-width: $tablet){
       display: flex;
       flex-direction: column;
-      flex-grow: 1;
    }
 
    transition: box-shadow 250ms var(--timing-function);
